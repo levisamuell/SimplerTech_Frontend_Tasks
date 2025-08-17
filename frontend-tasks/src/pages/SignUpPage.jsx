@@ -15,7 +15,12 @@ export default function SignUpPage() {
       return;
     }
     setError("");
+
+    // success message
     alert("Sign up successful!");
+
+    // clear form after success
+    setForm({ fullName: "", email: "", password: "" });
   };
 
   return (
